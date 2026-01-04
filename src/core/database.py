@@ -95,13 +95,9 @@ class Database:
                 )
             """)
             
-            # Triggers to keep FTS5 in sync
-            cursor.execute("""
-                CREATE TRIGGER IF NOT EXISTS chunks_ai AFTER INSERT ON chunks BEGIN
-                    INSERT INTO chunks_fts(rowid, text)
-                    VALUES (new.rowid, new.text);
-                END
-            """)
+            # Triggers to keep FTS5 in sync with tokenized text
+            # Note: INSERT is handled manually in add_chunk() for proper tokenization
+            # Only need triggers for DELETE and UPDATE
             
             cursor.execute("""
                 CREATE TRIGGER IF NOT EXISTS chunks_ad AFTER DELETE ON chunks BEGIN
@@ -208,6 +204,24 @@ class Database:
                 )
             return None
     
+    def update_document(self, document: Document) -> None:
+        """Update a document's information."""
+        with self.get_connection() as conn:
+            conn.execute("""
+                UPDATE documents 
+                SET path = ?, title = ?, ext = ?, mtime = ?, size = ?, status = ?, error_message = ?
+                WHERE id = ?
+            """, (
+                document.path,
+                document.title,
+                document.ext,
+                document.mtime.timestamp(),
+                document.size,
+                document.status.value,
+                document.error_message,
+                document.id
+            ))
+    
     def update_document_status(self, document_id: str, status: DocumentStatus, 
                               error_message: Optional[str] = None) -> None:
         """Update document status."""
@@ -240,18 +254,28 @@ class Database:
                 for row in rows
             ]
     
+    def reset_all_documents_to_pending(self) -> int:
+        """Reset all documents to PENDING status for re-indexing.
+        
+        Returns:
+            Number of documents reset
+        """
+        with self.get_connection() as conn:
+            cursor = conn.execute("""
+                UPDATE documents SET status = ?, error_message = NULL
+            """, (DocumentStatus.PENDING.value,))
+            return cursor.rowcount
+    
     # Chunk operations
     def add_chunk(self, chunk: Chunk) -> None:
         """Add a chunk to the database.
         
-        The text is automatically tokenized for Japanese support before
-        being added to the FTS5 index via triggers.
+        The text is stored as-is in chunks table.
+        For FTS5, we manually tokenize for Japanese support.
         """
-        # Tokenize text for FTS5 (handles Japanese)
-        tokenized_text = self.tokenizer.tokenize(chunk.text)
-        
         with self.get_connection() as conn:
-            conn.execute("""
+            # Insert into chunks table with original text
+            cursor = conn.execute("""
                 INSERT INTO chunks (id, document_id, page, start_offset, end_offset, text, text_hash)
                 VALUES (?, ?, ?, ?, ?, ?, ?)
             """, (
@@ -260,9 +284,21 @@ class Database:
                 chunk.page,
                 chunk.start_offset,
                 chunk.end_offset,
-                tokenized_text,  # Store tokenized version for FTS5
+                chunk.text,  # Store original text
                 chunk.text_hash
             ))
+            
+            # Get the rowid for FTS5
+            rowid = cursor.lastrowid
+            
+            # Tokenize text for FTS5 (Japanese support)
+            tokenized_text = self.tokenizer.tokenize(chunk.text)
+            
+            # Manually insert into FTS5 with tokenized text
+            conn.execute("""
+                INSERT INTO chunks_fts(rowid, text)
+                VALUES (?, ?)
+            """, (rowid, tokenized_text))
     
     def get_chunk(self, chunk_id: str) -> Optional[Chunk]:
         """Get a chunk by ID."""
@@ -313,6 +349,30 @@ class Database:
         with self.get_connection() as conn:
             row = conn.execute("SELECT COUNT(*) as count FROM chunks").fetchone()
             return row['count']
+    
+    def get_document_count(self) -> int:
+        """Get total number of documents."""
+        with self.get_connection() as conn:
+            row = conn.execute("SELECT COUNT(*) as count FROM documents").fetchone()
+            return row['count']
+    
+    def get_all_documents(self) -> List[Document]:
+        """Get all documents from the database."""
+        with self.get_connection() as conn:
+            rows = conn.execute("SELECT * FROM documents").fetchall()
+            documents = []
+            for row in rows:
+                documents.append(Document(
+                    id=row['id'],
+                    path=row['path'],
+                    title=row['title'],
+                    ext=row['ext'],
+                    mtime=datetime.fromtimestamp(row['mtime']),
+                    size=row['size'],
+                    status=DocumentStatus(row['status']),
+                    error_message=row['error_message']
+                ))
+            return documents
     
     # FTS5 search
     def search_chunks_fts(self, query: str, limit: int = 10) -> List[tuple[str, float]]:

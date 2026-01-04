@@ -58,31 +58,21 @@ class Chunker:
             end_idx = min(start_idx + self.chunk_size, len(tokens))
             chunk_tokens = tokens[start_idx:end_idx]
             
-            # Reconstruct text from tokens
-            chunk_text = ' '.join(chunk_tokens)
-            
             # Find character offsets in original text
-            # This is approximate since tokenization may change text
+            # Calculate approximate character positions based on token positions
             if start_idx == 0:
                 start_offset = 0
             else:
-                # Try to find the start of this chunk in the original text
-                start_search = ' '.join(chunk_tokens[:min(10, len(chunk_tokens))])
-                start_offset = text.find(start_search, chunks[-1].start_offset if chunks else 0)
-                if start_offset == -1:
-                    start_offset = chunks[-1].end_offset if chunks else 0
+                # Use previous chunk's end as our start
+                start_offset = chunks[-1].end_offset if chunks else 0
             
-            # Find end offset
-            if end_idx >= len(tokens):
-                end_offset = len(text)
-            else:
-                # Try to find where this chunk ends
-                end_search = ' '.join(chunk_tokens[-min(10, len(chunk_tokens)):])
-                end_offset = text.find(end_search, start_offset)
-                if end_offset == -1:
-                    end_offset = start_offset + len(chunk_text)
-                else:
-                    end_offset += len(end_search)
+            # Calculate end offset - approximate based on average chars per token
+            avg_chars_per_token = len(text) / len(tokens) if len(tokens) > 0 else 1
+            approx_end = int(start_offset + (len(chunk_tokens) * avg_chars_per_token))
+            end_offset = min(approx_end, len(text))
+            
+            # Extract actual text from original (not reconstructed from tokens)
+            chunk_text = text[start_offset:end_offset]
             
             # Generate hash for deduplication
             text_hash = self._generate_hash(chunk_text)

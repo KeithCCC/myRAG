@@ -1,0 +1,374 @@
+2026-01-04 15:54:59,780 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 15:54:59,844 - __main__ - INFO - Database initialized
+2026-01-04 15:55:00,015 - src.ui.library_view - ERROR - Error loading statistics: 'Database' object has no attribute 'get_document_count'
+2026-01-04 15:55:00,018 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 15:55:02,144 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 15:55:02,270 - __main__ - INFO - Application started
+2026-01-04 15:55:36,565 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 15:55:36,570 - __main__ - INFO - Database initialized
+2026-01-04 15:55:36,608 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 15:55:37,112 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 15:55:37,183 - __main__ - INFO - Application started
+2026-01-04 15:56:30,627 - src.ui.main_window - INFO - Application closed
+2026-01-04 16:10:25,683 - src.ui.main_window - INFO - Application closed
+2026-01-04 16:11:00,459 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 16:11:00,466 - __main__ - INFO - Database initialized
+2026-01-04 16:11:00,483 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 16:11:00,935 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 16:11:01,000 - __main__ - INFO - Application started
+2026-01-04 16:11:15,345 - src.ui.main_window - INFO - Status: Added folder: myRAG
+2026-01-04 16:11:15,345 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG
+2026-01-04 16:11:20,345 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:11:27,207 - src.ui.library_view - ERROR - Indexing failed: Chunker.__init__() got an unexpected keyword argument 'overlap'
+Traceback (most recent call last):
+  File "C:\Development\projects\myRAG\src\ui\library_view.py", line 60, in run
+    chunker = Chunker(chunk_size=500, overlap=100)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Chunker.__init__() got an unexpected keyword argument 'overlap'
+2026-01-04 16:11:29,770 - src.ui.main_window - INFO - Status: Error: Indexing failed: Chunker.__init__() got an unexpected keyword argument 'overlap'
+2026-01-04 16:12:38,209 - src.ui.main_window - INFO - Status: Removed folder: myRAG
+2026-01-04 16:12:38,210 - src.ui.library_view - INFO - Removed folder: C:\Development\projects\myRAG
+2026-01-04 16:12:51,256 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 16:12:51,256 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 16:12:54,508 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:12:54,522 - src.ui.library_view - ERROR - Indexing failed: Chunker.__init__() got an unexpected keyword argument 'overlap'
+Traceback (most recent call last):
+  File "C:\Development\projects\myRAG\src\ui\library_view.py", line 60, in run
+    chunker = Chunker(chunk_size=500, overlap=100)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Chunker.__init__() got an unexpected keyword argument 'overlap'
+2026-01-04 16:13:12,446 - src.ui.main_window - INFO - Status: Error: Indexing failed: Chunker.__init__() got an unexpected keyword argument 'overlap'
+2026-01-04 16:15:27,271 - src.ui.main_window - INFO - Application closed
+2026-01-04 16:15:43,012 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 16:15:43,016 - __main__ - INFO - Database initialized
+2026-01-04 16:15:43,043 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 16:15:43,434 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 16:15:43,502 - __main__ - INFO - Application started
+2026-01-04 16:15:55,594 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 16:15:55,595 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 16:15:58,178 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:16:01,657 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:16:06,052 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:16:07,529 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:16:24,450 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:17:02,810 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:17:19,074 - src.ui.main_window - INFO - Application closed
+2026-01-04 16:19:24,681 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 16:19:24,688 - __main__ - INFO - Database initialized
+2026-01-04 16:19:24,712 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 16:19:25,138 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 16:19:25,198 - __main__ - INFO - Application started
+2026-01-04 16:19:38,078 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 16:19:38,079 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 16:19:41,568 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:19:43,462 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:19:46,268 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:19:46,272 - src.ui.library_view - INFO - Reset 330 documents to PENDING status
+2026-01-04 16:19:48,466 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:20:01,051 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:20:01,055 - src.ui.library_view - INFO - Reset 330 documents to PENDING status
+2026-01-04 16:20:02,550 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:20:44,808 - src.ui.main_window - INFO - Application closed
+2026-01-04 16:21:00,042 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 16:21:00,092 - __main__ - INFO - Database initialized
+2026-01-04 16:21:00,124 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 16:21:00,558 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 16:21:00,625 - __main__ - INFO - Application started
+2026-01-04 16:21:38,452 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 16:21:38,453 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 16:21:46,827 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:21:46,914 - src.ui.library_view - ERROR - Error processing C:\Development\projects\myRAG\test-data\Test.pdf: 'Chunker' object has no attribute 'chunk_document'
+2026-01-04 16:21:46,914 - src.ui.library_view - ERROR - Indexing failed: 'Database' object has no attribute 'update_document'
+Traceback (most recent call last):
+  File "C:\Development\projects\myRAG\src\ui\library_view.py", line 82, in run
+    chunks = chunker.chunk_document(doc.id, extracted_doc)
+             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Chunker' object has no attribute 'chunk_document'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Development\projects\myRAG\src\ui\library_view.py", line 104, in run
+    db.update_document(doc)
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'update_document'. Did you mean: 'delete_document'?
+2026-01-04 16:22:38,306 - src.ui.main_window - INFO - Status: Error: Indexing failed: 'Database' object has no attribute 'update_document'
+2026-01-04 16:22:39,553 - src.ui.main_window - INFO - Application closed
+2026-01-04 16:22:59,210 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 16:22:59,216 - __main__ - INFO - Database initialized
+2026-01-04 16:22:59,242 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 16:22:59,658 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 16:22:59,725 - __main__ - INFO - Application started
+2026-01-04 16:23:15,056 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 16:23:15,056 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 16:23:21,891 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:23:23,704 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:23:26,751 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:23:26,754 - src.ui.library_view - INFO - Reset 1 documents to PENDING status
+2026-01-04 16:23:27,850 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:23:29,458 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:24:00,595 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 16:24:43,800 - src.ui.main_window - INFO - Application closed
+2026-01-04 16:24:53,478 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 16:24:53,483 - __main__ - INFO - Database initialized
+2026-01-04 16:24:53,507 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 16:24:53,909 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 16:24:53,979 - __main__ - INFO - Application started
+2026-01-04 16:25:08,383 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 16:25:08,383 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 16:25:12,442 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:25:12,496 - src.ui.library_view - ERROR - Error processing C:\Development\projects\myRAG\test-data\Test.pdf: 'Chunker' object has no attribute 'chunk_document'
+2026-01-04 16:25:15,154 - src.ui.main_window - INFO - Status: Indexed 0 documents with 0 chunks
+2026-01-04 16:25:18,982 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 16:25:18,994 - src.ui.library_view - INFO - Reset 1 documents to PENDING status
+2026-01-04 16:25:19,045 - src.ui.library_view - ERROR - Error processing C:\Development\projects\myRAG\test-data\Test.pdf: 'Chunker' object has no attribute 'chunk_document'
+2026-01-04 16:25:46,324 - src.ui.main_window - INFO - Status: Indexed 0 documents with 0 chunks
+2026-01-04 18:47:10,549 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 18:47:10,634 - __main__ - INFO - Database initialized
+2026-01-04 18:47:10,656 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 18:47:12,886 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 18:47:12,949 - __main__ - INFO - Application started
+2026-01-04 18:49:31,022 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 18:49:31,024 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 18:49:33,444 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 18:49:36,576 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 18:49:38,490 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 18:49:40,176 - src.ui.main_window - INFO - Status: No new documents to index
+2026-01-04 18:49:43,821 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 18:49:43,831 - src.ui.library_view - INFO - Reset 1 documents to PENDING status
+2026-01-04 18:49:44,261 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 18:49:44,261 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 18:49:49,123 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 18:49:49,124 - src.indexing.index_store - INFO - Added 10 vectors to index (total: 10)
+2026-01-04 18:49:49,125 - src.indexing.index_store - INFO - Saved index (10 vectors) to C:\Development\projects\data\embeddings.index
+2026-01-04 18:49:55,100 - src.ui.main_window - INFO - Status: Indexed 1 documents with 10 chunks
+2026-01-04 18:50:23,078 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:23,080 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:50:29,708 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:29,709 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:50:30,645 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:30,646 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:50:31,290 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:31,292 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:50:40,996 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:40,998 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:50:42,864 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:42,865 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:50:43,838 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:43,839 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:50:44,401 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:50:44,403 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:13,186 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:13,187 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:13,502 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:13,503 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:13,815 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:13,816 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:14,881 - src.ui.main_window - INFO - Status: Search cleared
+2026-01-04 18:51:21,391 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:21,392 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:23,048 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:23,049 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:23,731 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:23,733 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:24,338 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:24,339 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 18:51:24,661 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 18:51:24,662 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 19:55:44,489 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 19:55:44,559 - __main__ - INFO - Database initialized
+2026-01-04 19:55:44,582 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 19:55:44,583 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 19:55:47,975 - src.indexing.index_store - INFO - Loaded index (10 vectors) from C:\Development\projects\data\embeddings.index
+2026-01-04 19:55:47,975 - src.ui.search_view - INFO - Retriever initialized with semantic search
+2026-01-04 19:55:48,715 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 19:55:48,783 - __main__ - INFO - Application started
+2026-01-04 19:59:11,797 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 19:59:11,797 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 19:59:15,688 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 19:59:15,866 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 19:59:15,867 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 19:59:19,604 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 19:59:19,606 - src.indexing.index_store - INFO - Added 10 vectors to index (total: 10)
+2026-01-04 19:59:19,607 - src.indexing.index_store - INFO - Saved index (10 vectors) to C:\Development\projects\data\embeddings.index
+2026-01-04 19:59:21,596 - src.ui.main_window - INFO - Status: Indexed 1 documents with 10 chunks
+2026-01-04 19:59:28,731 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 19:59:28,732 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 19:59:33,621 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 19:59:33,623 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 19:59:34,034 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 19:59:34,036 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 20:05:26,533 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 20:05:26,582 - __main__ - INFO - Database initialized
+2026-01-04 20:05:26,613 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 20:05:26,614 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 20:05:30,849 - src.indexing.index_store - INFO - Loaded index (10 vectors) from C:\Development\projects\data\embeddings.index
+2026-01-04 20:05:30,849 - src.ui.search_view - INFO - Retriever initialized with semantic search
+2026-01-04 20:05:31,259 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 20:05:31,329 - __main__ - INFO - Application started
+2026-01-04 20:05:48,232 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 20:05:48,232 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 20:05:53,873 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 20:05:54,054 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 20:05:54,055 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 20:05:58,040 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 20:05:58,042 - src.indexing.index_store - INFO - Added 10 vectors to index (total: 10)
+2026-01-04 20:05:58,043 - src.indexing.index_store - INFO - Saved index (10 vectors) to C:\Development\projects\data\embeddings.index
+2026-01-04 20:06:00,611 - src.ui.main_window - INFO - Status: Indexed 1 documents with 10 chunks
+2026-01-04 20:06:06,930 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 20:06:06,931 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 20:08:21,050 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 20:08:21,117 - __main__ - INFO - Database initialized
+2026-01-04 20:08:21,146 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 20:08:21,146 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 20:08:25,192 - src.indexing.index_store - INFO - Loaded index (10 vectors) from C:\Development\projects\data\embeddings.index
+2026-01-04 20:08:25,192 - src.ui.search_view - INFO - Retriever initialized with semantic search
+2026-01-04 20:08:25,603 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 20:08:25,667 - __main__ - INFO - Application started
+2026-01-04 20:08:40,770 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 20:08:40,771 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 20:08:43,088 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 20:08:43,271 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 20:08:43,272 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 20:08:47,169 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 20:08:47,170 - src.indexing.index_store - INFO - Added 10 vectors to index (total: 10)
+2026-01-04 20:08:47,172 - src.indexing.index_store - INFO - Saved index (10 vectors) to C:\Development\projects\data\embeddings.index
+2026-01-04 20:08:49,325 - src.ui.main_window - INFO - Status: Indexed 1 documents with 10 chunks
+2026-01-04 20:09:02,670 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 20:09:02,672 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 20:09:12,562 - src.ui.main_window - INFO - Status: Searching (hybrid)...
+2026-01-04 20:09:12,612 - src.ui.main_window - INFO - Status: Found 0 results (hybrid search)
+2026-01-04 20:09:13,013 - src.ui.main_window - INFO - Status: Searching (hybrid)...
+2026-01-04 20:09:13,023 - src.ui.main_window - INFO - Status: Found 0 results (hybrid search)
+2026-01-04 20:09:13,268 - src.ui.main_window - INFO - Status: Searching (hybrid)...
+2026-01-04 20:09:13,282 - src.ui.main_window - INFO - Status: Found 0 results (hybrid search)
+2026-01-04 20:09:13,882 - src.ui.main_window - INFO - Status: Searching (hybrid)...
+2026-01-04 20:09:13,898 - src.ui.main_window - INFO - Status: Found 0 results (hybrid search)
+2026-01-04 20:09:14,483 - src.ui.main_window - INFO - Status: Searching (hybrid)...
+2026-01-04 20:09:14,496 - src.ui.main_window - INFO - Status: Found 0 results (hybrid search)
+2026-01-04 20:09:28,033 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 20:09:28,045 - src.ui.library_view - INFO - Reset 1 documents to PENDING status
+2026-01-04 20:09:28,206 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 20:09:28,206 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 20:09:32,356 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 20:09:32,358 - src.indexing.index_store - INFO - Added 20 vectors to index (total: 20)
+2026-01-04 20:09:32,359 - src.indexing.index_store - INFO - Saved index (20 vectors) to C:\Development\projects\data\embeddings.index
+2026-01-04 20:09:32,360 - src.ui.library_view - WARNING - Embedding generation failed: UNIQUE constraint failed: embeddings.chunk_id
+2026-01-04 20:09:33,966 - src.ui.main_window - INFO - Status: Indexed 1 documents with 20 chunks
+2026-01-04 20:09:39,263 - src.ui.main_window - INFO - Status: Searching (hybrid)...
+2026-01-04 20:09:39,278 - src.ui.main_window - INFO - Status: Found 0 results (hybrid search)
+2026-01-04 20:09:46,255 - src.ui.main_window - INFO - Application closed
+2026-01-04 20:13:45,741 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 20:13:45,805 - __main__ - INFO - Database initialized
+2026-01-04 20:13:45,831 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 20:13:45,831 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 20:13:49,730 - src.indexing.index_store - INFO - Loaded index (20 vectors) from C:\Development\projects\data\embeddings.index
+2026-01-04 20:13:49,731 - src.ui.search_view - INFO - Retriever initialized with semantic search
+2026-01-04 20:13:50,153 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 20:13:50,226 - __main__ - INFO - Application started
+2026-01-04 20:14:05,552 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 20:14:05,552 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 20:14:07,569 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 20:14:07,723 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 20:14:07,723 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 20:14:11,360 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 20:14:11,361 - src.indexing.index_store - INFO - Added 10 vectors to index (total: 10)
+2026-01-04 20:14:11,362 - src.indexing.index_store - INFO - Saved index (10 vectors) to C:\Development\projects\data\embeddings.index
+2026-01-04 20:14:13,220 - src.ui.main_window - INFO - Status: Indexed 1 documents with 10 chunks
+2026-01-04 20:14:19,794 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 20:14:19,796 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:19:23,138 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:19:23,142 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:19:24,442 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:19:24,443 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:19:25,086 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:19:25,087 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:19:39,884 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:19:39,885 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:19:40,746 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:19:40,747 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:19:48,289 - src.ui.main_window - INFO - Application closed
+2026-01-04 22:20:44,145 - __main__ - INFO - Database: C:\Development\projects\data\folderrag.db
+2026-01-04 22:20:44,149 - __main__ - INFO - Database initialized
+2026-01-04 22:20:44,171 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 22:20:44,171 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 22:20:47,622 - src.indexing.index_store - INFO - Loaded index (10 vectors) from C:\Development\projects\data\embeddings.index
+2026-01-04 22:20:47,623 - src.ui.search_view - INFO - Retriever initialized with semantic search
+2026-01-04 22:20:47,998 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 22:20:48,077 - __main__ - INFO - Application started
+2026-01-04 22:23:44,402 - __main__ - INFO - Database: C:\Development\projects\myRAG\data\folderrag.db
+2026-01-04 22:23:44,469 - __main__ - INFO - Database initialized
+2026-01-04 22:23:44,495 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 22:23:44,891 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 22:23:44,969 - __main__ - INFO - Application started
+2026-01-04 22:24:00,727 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 22:24:00,727 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 22:24:03,166 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 22:24:03,350 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 22:24:03,350 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 22:24:07,217 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 22:24:07,219 - src.indexing.index_store - INFO - Added 10 vectors to index (total: 10)
+2026-01-04 22:24:07,219 - src.indexing.index_store - INFO - Saved index (10 vectors) to C:\Development\projects\myRAG\data\embeddings.index
+2026-01-04 22:24:09,231 - src.ui.main_window - INFO - Status: Indexed 1 documents with 10 chunks
+2026-01-04 22:24:14,935 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:24:14,935 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:24:17,640 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:24:17,649 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:24:19,038 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:24:19,038 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:24:22,428 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:24:22,428 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:24:23,059 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:24:23,059 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:24:23,353 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:24:23,357 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:24:38,089 - src.ui.main_window - INFO - Application closed
+2026-01-04 22:25:34,168 - __main__ - INFO - Database: C:\Development\projects\myRAG\data\folderrag.db
+2026-01-04 22:25:34,228 - __main__ - INFO - Database initialized
+2026-01-04 22:25:34,256 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 22:25:34,640 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 22:25:34,706 - __main__ - INFO - Application started
+2026-01-04 22:25:48,900 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 22:25:48,900 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 22:25:53,516 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 22:25:53,702 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 22:25:53,702 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 22:25:57,707 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 22:25:57,717 - src.indexing.index_store - INFO - Added 10 vectors to index (total: 10)
+2026-01-04 22:25:57,717 - src.indexing.index_store - INFO - Saved index (10 vectors) to C:\Development\projects\myRAG\data\embeddings.index
+2026-01-04 22:26:00,173 - src.ui.main_window - INFO - Status: Indexed 1 documents with 10 chunks
+2026-01-04 22:26:09,460 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:26:09,460 - src.ui.main_window - INFO - Status: Found 0 results (keyword search)
+2026-01-04 22:28:31,951 - __main__ - INFO - Database: C:\Development\projects\myRAG\data\folderrag.db
+2026-01-04 22:28:32,016 - __main__ - INFO - Database initialized
+2026-01-04 22:28:32,041 - src.ui.search_view - INFO - Retriever initialized (keyword-only)
+2026-01-04 22:28:32,467 - src.ui.main_window - INFO - Main window initialized
+2026-01-04 22:28:32,539 - __main__ - INFO - Application started
+2026-01-04 22:28:41,595 - src.ui.main_window - INFO - Status: Added folder: myRAG
+2026-01-04 22:28:41,595 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG
+2026-01-04 22:28:45,148 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 22:29:24,525 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 22:29:24,525 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 22:30:39,591 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 22:30:39,594 - src.indexing.index_store - INFO - Added 5138 vectors to index (total: 5138)
+2026-01-04 22:30:39,600 - src.indexing.index_store - INFO - Saved index (5138 vectors) to C:\Development\projects\myRAG\data\embeddings.index
+2026-01-04 22:31:13,138 - src.ui.main_window - INFO - Status: Indexed 329 documents with 5138 chunks
+2026-01-04 22:31:32,685 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:31:32,701 - src.ui.main_window - INFO - Status: Found 20 results (keyword search)
+2026-01-04 22:31:44,695 - src.ui.main_window - INFO - Status: Removed folder: myRAG
+2026-01-04 22:31:44,695 - src.ui.library_view - INFO - Removed folder: C:\Development\projects\myRAG
+2026-01-04 22:31:54,805 - src.ui.main_window - INFO - Status: Added folder: test-data
+2026-01-04 22:31:54,805 - src.ui.library_view - INFO - Added folder: C:\Development\projects\myRAG\test-data
+2026-01-04 22:31:58,722 - src.ui.main_window - INFO - Status: Indexing started...
+2026-01-04 22:31:58,741 - src.ui.library_view - INFO - Reset 329 documents to PENDING status
+2026-01-04 22:32:32,133 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2026-01-04 22:32:32,133 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-01-04 22:35:21,055 - src.indexing.index_store - INFO - Created Flat index with dimension 384
+2026-01-04 22:35:21,078 - src.indexing.index_store - INFO - Added 10276 vectors to index (total: 10276)
+2026-01-04 22:35:21,088 - src.indexing.index_store - INFO - Saved index (10276 vectors) to C:\Development\projects\myRAG\data\embeddings.index
+2026-01-04 22:35:21,090 - src.ui.library_view - WARNING - Embedding generation failed: UNIQUE constraint failed: embeddings.chunk_id
+2026-01-04 22:35:27,607 - src.ui.main_window - INFO - Status: Indexed 329 documents with 10276 chunks
+2026-01-04 22:35:31,638 - src.ui.main_window - INFO - Status: Search cleared
+2026-01-04 22:35:35,526 - src.ui.main_window - INFO - Status: Searching (keyword)...
+2026-01-04 22:35:35,542 - src.ui.main_window - INFO - Status: Found 20 results (keyword search)
+2026-01-04 22:49:27,360 - src.ui.main_window - INFO - Application closed
