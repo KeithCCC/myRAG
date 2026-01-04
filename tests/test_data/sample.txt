@@ -1,0 +1,16 @@
+This is a test text file for the myRAG indexing system.
+
+This file contains multiple paragraphs to test text extraction and chunking.
+
+The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet and is commonly used for testing.
+
+機械学習は人工知能の一分野である。
+機械学習のアルゴリズムには、教師あり学習、教師なし学習、強化学習などがある。
+
+This file tests:
+- UTF-8 encoding with Japanese characters
+- Multiple paragraphs
+- Mixed English and Japanese text
+- Line breaks and formatting
+
+End of test file.
